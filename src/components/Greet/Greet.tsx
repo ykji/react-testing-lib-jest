@@ -1,8 +1,6 @@
-interface Props {
-  name?: string;
-}
+import { GreetProps } from "./Greet.types";
 
-const Greet = (props: Props) => {
+const Greet = (props: GreetProps) => {
   const { name } = props;
 
   return <div>Namaskar{name && `, ${name} ji`}</div>;
