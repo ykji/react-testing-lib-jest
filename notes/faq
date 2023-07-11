@@ -1,0 +1,16 @@
+----------Why shouldn't be use querySelectors?----------------
+
+When testing React components, it's generally recommended to avoid using querySelector or similar DOM manipulation methods directly for several reasons:
+
+    Abstraction level: React components abstract away the underlying DOM structure, allowing you to work with a higher level of abstraction. By using React Testing Library's querying methods, such as getByRole, getByText, or getByTestId, you can write tests that reflect how users interact with the components rather than relying on specific DOM selectors.
+
+    Resilience to implementation changes: React components can have complex internal structures that may change over time due to refactoring or updates. If you use querySelector with specific DOM selectors, your tests will become tightly coupled to the implementation details of the component, making them fragile and prone to breaking when the component's structure changes.
+
+    Accessibility support: React Testing Library encourages testing components with a focus on accessibility. Its querying methods prioritize accessibility roles, labels, and semantics, which can help ensure that your components are accessible to all users. Using querySelector doesn't provide the same level of accessibility-focused testing capabilities.
+
+    Clearer intent: When you use React Testing Library's querying methods, your tests express their intent more explicitly. For example, using getByRole('button') communicates that you're looking for a button element, whereas using querySelector('button') may not convey the same level of clarity.
+
+
+-------------Chrome Extension---------------------------
+
+Testing playground

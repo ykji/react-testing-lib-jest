@@ -4,10 +4,19 @@ export const Application = () => {
       <h1>Heading for Form</h1>
       <h2>Section 1</h2>
       <p>All fields are mandatory</p>
+      <span title="close">X</span>
+      <div data-testid="custom-element"></div>
+      <img src="path.png" alt="person with laptop" />
       <form>
         <div>
           <label htmlFor="name">Name</label>
-          <input type="text" id="name" placeholder="Fullname" />
+          <input
+            type="text"
+            id="name"
+            placeholder="Fullname"
+            value={"Yash"}
+            onChange={() => {}}
+          />
         </div>
         <div>
           <label htmlFor="bio">Bio</label>
