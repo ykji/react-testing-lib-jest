@@ -10,7 +10,17 @@ When testing React components, it's generally recommended to avoid using querySe
 
     Clearer intent: When you use React Testing Library's querying methods, your tests express their intent more explicitly. For example, using getByRole('button') communicates that you're looking for a button element, whereas using querySelector('button') may not convey the same level of clarity.
 
-
--------------Chrome Extension---------------------------
+-------------Chrome Extension---------------------------------
 
 Testing playground
+
+-------------Difference btw queryBy and roleBy----------------
+
+getByRole: This method is used to find an element in the rendered output based on its role attribute. It expects the element to be present and throws an error if it cannot find the element with the specified role. It is commonly used when you need to assert that a specific element with a specific role exists in the rendered output.
+
+queryByRole: This method also searches for an element in the rendered output based on its role attribute, but it returns null if the element cannot be found. It is commonly used when you want to check if an element with a specific role exists, without throwing an error if it doesn't.
+
+
+---------Can we jest be used for component testing-----------------
+
+
