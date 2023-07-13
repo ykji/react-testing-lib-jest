@@ -53,5 +53,8 @@
         "lines": 80
       }
     }
+  },
+  "devDependencies": {
+    "msw": "^1.2.2"
   }
 }
