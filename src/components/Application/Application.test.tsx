@@ -17,7 +17,7 @@ describe("Application", () => {
     const closeElement = screen.getByTitle("close");
     expect(closeElement).toBeInTheDocument();
 
-    const customElement = screen.getByTestId('custom-element')
+    const customElement = screen.getByTestId("custom-element");
     expect(customElement).toBeInTheDocument();
 
     const imageElement = screen.getByAltText("person with laptop");
@@ -51,7 +51,7 @@ describe("Application", () => {
     expect(termsElement).toBeInTheDocument();
 
     const termsElement2 = screen.getByLabelText(
-      "I agree to the terms and conditions."
+      "I agree to the terms and conditions.",
     );
     expect(termsElement2).toBeInTheDocument();
 
