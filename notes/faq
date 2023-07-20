@@ -21,6 +21,29 @@ getByRole: This method is used to find an element in the rendered output based o
 queryByRole: This method also searches for an element in the rendered output based on its role attribute, but it returns null if the element cannot be found. It is commonly used when you want to check if an element with a specific role exists, without throwing an error if it doesn't.
 
 
----------Can we jest be used for component testing-----------------
+---------Can jest be used for component testing-----------------
+
+Yes, we can but then we would have to use react-dom query methods which again take us to ques1 in this faq.
 
 
+---------------Selenium vs Cypress vs RTL ----------------------
+
+ Selenium is a general-purpose end-to-end testing framework, Cypress is a specialized tool for modern web applications, and React Testing Library is a lightweight library for testing React components. The choice of which tool to use depends on the specific needs of your project, the type of testing required, and your preferred testing approach.
+
+    Use Selenium for cross-browser testing, end-to-end testing, and complex web applications with diverse tech stacks.
+
+    Use Cypress for fast, interactive, and reliable testing of modern SPAs with a focus on a great developer experience.
+
+    Use React Testing Library for testing React components from a user's perspective, with a focus on isolation and accessibility testing.
+
+
+----------------Integration vs Component Testing----------------
+
+
+ integration testing is concerned with how different components or services interact and work together as a whole system, while component testing focuses on testing individual components in isolation. Both types of testing are crucial for ensuring the overall quality and functionality of the application. Integration testing helps catch issues related to the integration of components, while component testing helps identify issues within individual components and ensures they function correctly in isolation.
+
+
+ ------------------ Unit vs Component testing-------------------
+
+
+  unit testing and component testing are similar in that they both involve testing individual parts of the application. However, unit testing focuses on testing the smallest units of code (functions, methods, or classes) in isolation, while component testing focuses on testing individual components of the application (UI components, directives) in isolation. Both types of testing are essential for ensuring the quality and functionality of the application, and they complement each other in an effective testing strategy.
